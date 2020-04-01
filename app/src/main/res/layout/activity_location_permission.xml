@@ -4,43 +4,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Location_permission"
-    android:padding="32dp">
+    android:background="#EDF4F4"
+    android:padding="32dp"
+    tools:context=".Location_permission">
+    android:background="@drawable/per_image"
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center_horizontal">
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher"/>
+            android:src="@mipmap/ic_launcher" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Permission Request"
-            android:textSize="24sp"
             android:layout_marginTop="12dp"
             android:fontFamily="sans-serif-condensed"
-            android:textStyle="bold"/>
+            android:text="Permission Request"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Application needs permission to access device location to provide the required services. Please allow the permission "
+            android:layout_marginTop="36dp"
             android:gravity="center_horizontal"
-            android:layout_marginTop="36dp"/>
+            android:text="Application needs permission to access device location to provide the required services. Please allow the permission " />
     </LinearLayout>
 
     <Button
         android:id="@+id/btn_grant"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="173dp"
+        android:layout_height="42dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:background="@color/colorPrimary"
-        android:textColor="#FFFFFF"
+        android:layout_marginEnd="255dp"
+        android:layout_marginRight="255dp"
+        android:layout_marginBottom="39dp"
+        android:background="#3A71BC"
         android:text="Grant Presmission"
         android:textAllCaps="false"
-        />
+        android:textColor="#FFFFFF" />
 
 </RelativeLayout>
